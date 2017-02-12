@@ -7,14 +7,36 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\sprite2</sprite>
+    <sprites name="Player">
+      <sprite>sprites\sprThief1Idle</sprite>
+    </sprites>
+    <sprites name="Env">
+      <sprite>sprites\sprEntorno1</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\sprGuard1Idle</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\object0</object>
     <object>objects\klzjdf</object>
+    <objects name="Env">
+      <object>objects\objEntorno1</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\objThief1</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\objGuard1</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
