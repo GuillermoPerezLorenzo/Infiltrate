@@ -86,6 +86,9 @@ if !device_mouse_check_button(0, mb_any) and movimiento{
         primerpunto=false;
         path_clear_points(path1);
         //path_add_point(path1,self.x,self.y,100);
+    }else{
+        direction = point_direction(x,y,path_get_x(path1,path_position+0.1),path_get_y(path1,path_position+0.1));
+        image_angle=direction-90;
     }
 }
 </string>
