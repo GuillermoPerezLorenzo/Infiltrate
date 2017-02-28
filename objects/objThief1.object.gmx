@@ -80,6 +80,9 @@ if !device_mouse_check_button(0, mb_any) and !movimiento {
 }
 //Movimiento
 if !device_mouse_check_button(0, mb_any) and movimiento{
+    if (sprite_index != sprThief1Idle) {
+        sprite_index = sprThief1Idle
+    }
     if covered {//Llegamos a una pared
         movimiento=false;
         primerpunto=false;
@@ -160,7 +163,6 @@ if (!collision_line(x, y, dest_x, dest_y, objCover, false, false)) {
         direction = 180
         image_angle = direction
     }
-    
 }
 </string>
           </argument>
