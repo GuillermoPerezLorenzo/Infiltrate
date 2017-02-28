@@ -9,9 +9,12 @@
     <sprite>sprites\sprite1</sprite>
     <sprites name="Player">
       <sprite>sprites\sprThief1Idle</sprite>
+      <sprite>sprites\sprThief1Covered1</sprite>
     </sprites>
     <sprites name="Env">
       <sprite>sprites\sprEntorno1</sprite>
+      <sprite>sprites\sprCover</sprite>
+      <sprite>sprites\sprBox1</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\sprGuard1Idle</sprite>
@@ -29,6 +32,7 @@
     <object>objects\klzjdf</object>
     <objects name="Env">
       <object>objects\objEntorno1</object>
+      <object>objects\objCover</object>
     </objects>
     <objects name="Player">
       <object>objects\objThief1</object>

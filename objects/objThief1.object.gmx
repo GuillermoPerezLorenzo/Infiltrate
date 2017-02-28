@@ -25,11 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>i=100;
-j=0;
-press=false;
-movimiento=false;
-primerpunto=false;
+            <string>i=100
+j=0
+press=false
+movimiento=false
+primerpunto=false
+covered = false
+
+image_speed = 0.1
 //global.path1 = path_add();
 //path_add_point(path1,self.x,self.y,100);
 </string>
@@ -81,15 +84,87 @@ if !device_mouse_check_button(0, mb_any) and !movimiento {
     //path = path_add();
 }
 if !device_mouse_check_button(0, mb_any) and movimiento{
+    if covered {
+        movimiento=false;
+        primerpunto=false;
+        covered = false
+        path_clear_points(path1);
+    }
     if(path_index==-1){
         movimiento=false;
         primerpunto=false;
         path_clear_points(path1);
         //path_add_point(path1,self.x,self.y,100);
     }else{
+
+        
         direction = point_direction(x,y,path_get_x(path1,path_position+0.1),path_get_y(path1,path_position+0.1));
         image_angle=direction-90;
     }
+}
+/*
+if (!collision_line(x, y, dest_x, dest_y, objCover, false, false)) {
+    if point_distance(x, y, dest_x, dest_y) &gt; 2 {
+        direction = point_direction(x, y, dest_x, dest_y) - 90
+        image_angle = direction
+        
+        if (sprite_index != sprThief1Idle and covered) {
+            sprite_index = sprThief1Idle
+            covered = false
+        }
+
+        move_towards_point(dest_x, dest_y, 2)
+    } else {
+        x = dest_x
+        y = dest_y
+        speed = 0
+    }
+}
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objCover">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (not covered) {
+    if (sprite_index != sprThief1Covered1) {
+        sprite_index = sprThief1Covered1
+    }
+    
+    covered = true;
+    //speed = 0
+        
+    if (place_meeting(x - 5, y, objCover)) {
+        direction = 270
+        image_angle = direction
+    } else if (place_meeting(x, y + 5, objCover)) {
+        direction = 0
+        image_angle = direction
+    } else if (place_meeting(x + 5, y, objCover)) {
+        direction = 90
+        image_angle = direction
+    } else {
+        direction = 180
+        image_angle = direction
+    }
+    
 }
 </string>
           </argument>
