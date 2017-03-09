@@ -6,44 +6,51 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprite1</sprite>
     <sprites name="Player">
       <sprite>sprites\sprThief1Idle</sprite>
       <sprite>sprites\sprThief1Covered1</sprite>
     </sprites>
     <sprites name="Env">
-      <sprite>sprites\sprEntorno1</sprite>
-      <sprite>sprites\sprCover</sprite>
       <sprite>sprites\sprBox1</sprite>
+      <sprite>sprites\sprCover</sprite>
+      <sprite>sprites\sprKey1</sprite>
+      <sprite>sprites\sprKey2</sprite>
     </sprites>
-    <sprites name="Enemies">
-      <sprite>sprites\sprGuard1Idle</sprite>
+    <sprites name="UI">
+      <sprite>sprites\sprInv</sprite>
+      <sprite>sprites\sprBtInv</sprite>
+      <sprite>sprites\sprArrowUp</sprite>
+      <sprite>sprites\sprArrowDown</sprite>
+      <sprite>sprites\sprArrowLeft</sprite>
+      <sprite>sprites\sprArrowRight</sprite>
     </sprites>
-    <sprite>sprites\linea</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\path1</path>
-  </paths>
+  <paths name="paths"/>
   <objects name="objects">
-    <object>objects\object0</object>
-    <object>objects\klzjdf</object>
     <objects name="Env">
-      <object>objects\objEntorno1</object>
       <object>objects\objCover</object>
+      <object>objects\objKey</object>
+      <object>objects\objBox1</object>
     </objects>
     <objects name="Player">
       <object>objects\objThief1</object>
     </objects>
-    <objects name="Enemies">
-      <object>objects\objGuard1</object>
+    <objects name="UI">
+      <object>objects\objInv</object>
+      <object>objects\objBtInv</object>
+      <object>objects\objKeyNoInv</object>
+      <object>objects\objKeyInv</object>
+      <object>objects\objArrowUp</object>
+      <object>objects\objArrowDown</object>
+      <object>objects\objArrowLeft</object>
+      <object>objects\objArrowRight</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
-    <room>rooms\room0</room>
+    <room>rooms\room_test1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
