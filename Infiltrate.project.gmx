@@ -11,46 +11,59 @@
       <sprite>sprites\sprThief1Covered1</sprite>
     </sprites>
     <sprites name="Env">
-      <sprite>sprites\sprBox1</sprite>
+      <sprite>sprites\sprEntorno1</sprite>
       <sprite>sprites\sprCover</sprite>
+      <sprite>sprites\sprBox1</sprite>
       <sprite>sprites\sprKey1</sprite>
       <sprite>sprites\sprKey2</sprite>
     </sprites>
-    <sprites name="UI">
-      <sprite>sprites\sprInv</sprite>
+    <sprites name="Enemies">
+      <sprite>sprites\sprGuard1Idle</sprite>
+    </sprites>
+    <sprite>sprites\linea</sprite>
+    <sprites name="Controls">
+      <sprite>sprites\Arrow_Up</sprite>
+      <sprite>sprites\Arrow_Down</sprite>
+      <sprite>sprites\Arrow_Left</sprite>
+      <sprite>sprites\Arrow_Rigth</sprite>
       <sprite>sprites\sprBtInv</sprite>
-      <sprite>sprites\sprArrowUp</sprite>
-      <sprite>sprites\sprArrowDown</sprite>
-      <sprite>sprites\sprArrowLeft</sprite>
-      <sprite>sprites\sprArrowRight</sprite>
+      <sprite>sprites\sprInv</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path1</path>
+  </paths>
   <objects name="objects">
+    <object>objects\object0</object>
+    <object>objects\klzjdf</object>
     <objects name="Env">
+      <object>objects\objEntorno1</object>
       <object>objects\objCover</object>
+      <object>objects\objMove</object>
       <object>objects\objKey</object>
-      <object>objects\objBox1</object>
+      <object>objects\objKeyInv</object>
+      <object>objects\objKeyNoInv</object>
     </objects>
     <objects name="Player">
       <object>objects\objThief1</object>
     </objects>
-    <objects name="UI">
-      <object>objects\objInv</object>
-      <object>objects\objBtInv</object>
-      <object>objects\objKeyNoInv</object>
-      <object>objects\objKeyInv</object>
+    <objects name="Enemies">
+      <object>objects\objGuard1</object>
+    </objects>
+    <objects name="Controls">
       <object>objects\objArrowUp</object>
       <object>objects\objArrowDown</object>
       <object>objects\objArrowLeft</object>
-      <object>objects\objArrowRight</object>
+      <object>objects\objArrowRigth</object>
+      <object>objects\objInv</object>
+      <object>objects\objBtInv</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_test1</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
