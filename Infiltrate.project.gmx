@@ -11,7 +11,6 @@
       <sprite>sprites\sprThief1Covered1</sprite>
     </sprites>
     <sprites name="Env">
-      <sprite>sprites\sprEntorno1</sprite>
       <sprite>sprites\sprCover</sprite>
       <sprite>sprites\sprBox1</sprite>
       <sprite>sprites\sprKey1</sprite>
@@ -20,7 +19,6 @@
     <sprites name="Enemies">
       <sprite>sprites\sprGuard1Idle</sprite>
     </sprites>
-    <sprite>sprites\linea</sprite>
     <sprites name="Controls">
       <sprite>sprites\Arrow_Up</sprite>
       <sprite>sprites\Arrow_Down</sprite>
@@ -33,23 +31,16 @@
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\path1</path>
-  </paths>
+  <paths name="paths"/>
   <objects name="objects">
-    <object>objects\object0</object>
-    <object>objects\klzjdf</object>
     <objects name="Env">
-      <object>objects\objEntorno1</object>
       <object>objects\objCover</object>
       <object>objects\objMove</object>
       <object>objects\objKey</object>
       <object>objects\objKeyInv</object>
       <object>objects\objKeyNoInv</object>
     </objects>
-    <objects name="Player">
-      <object>objects\objThief1</object>
-    </objects>
+    <objects name="Player"/>
     <objects name="Enemies">
       <object>objects\objGuard1</object>
     </objects>
