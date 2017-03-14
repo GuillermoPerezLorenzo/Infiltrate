@@ -63,10 +63,10 @@ image_speed = 0.1
 if device_mouse_check_button(0, mb_any) and !movimiento and !primerpunto{
     if(distance_to_point(device_mouse_x(0),device_mouse_y(0))&lt;30){//rango inicio del camino (entorno al personaje)
         path_add_point(path1,device_mouse_x(0),device_mouse_y(0),100);//Primer punto del camino
-        primerpunto=true//Inicializaci髇 del camino
+        primerpunto=true//Inicializaci贸n del camino
     }
 }
-//Definici髇 del camino
+//Definici贸n del camino
 if device_mouse_check_button(0, mb_any) and !movimiento and primerpunto{
     press=true;
     instance_create(device_mouse_x(0),device_mouse_y(0),object0);
@@ -91,7 +91,7 @@ if !device_mouse_check_button(0, mb_any) and movimiento{
         covered = false
         path_clear_points(path1);
     }
-    else if firstCollision{//Llegamos a un objeto m髒il
+    else if firstCollision{//Llegamos a un objeto m贸vil
         movimiento = false
         primerpunto = false
         firstCollision = false
@@ -101,7 +101,7 @@ if !device_mouse_check_button(0, mb_any) and movimiento{
         movimiento=false;
         primerpunto=false;
         path_clear_points(path1);
-    }else{//Direcci髇 del movimiento
+    }else{//Direcci贸n del movimiento
         direction = point_direction(x,y,path_get_x(path1,path_position+0.1),path_get_y(path1,path_position+0.1));
         image_angle=direction-90;
     }
@@ -150,7 +150,7 @@ if (!collision_line(x, y, dest_x, dest_y, objCover, false, false)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//La primera vez que colisiona contra un objeto m髒il muestra unas flechas
+            <string>//La primera vez que colisiona contra un objeto m贸vil muestra unas flechas
 if(!firstCollision){
     firstCollision = true
     
