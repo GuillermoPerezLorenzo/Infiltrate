@@ -27,14 +27,6 @@
       <sprite>sprites\sprBtInv</sprite>
       <sprite>sprites\sprInv</sprite>
     </sprites>
-    <sprites name="Controls">
-      <sprite>sprites\Arrow_Up</sprite>
-      <sprite>sprites\Arrow_Down</sprite>
-      <sprite>sprites\Arrow_Left</sprite>
-      <sprite>sprites\Arrow_Rigth</sprite>
-      <sprite>sprites\sprBtInv</sprite>
-      <sprite>sprites\sprInv</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -48,7 +40,6 @@
       <object>objects\objKeyInv</object>
       <object>objects\objKeyNoInv</object>
     </objects>
-    <objects name="Player"/>
     <objects name="Enemies">
       <object>objects\objGuard1</object>
     </objects>
