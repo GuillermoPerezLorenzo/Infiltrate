@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="&lt;undefined&gt;" x="96" y="32" name="inst_9A8C8AE2" locked="0" code="" scaleX="1.83333337306976" scaleY="1.83333337306976" colour="4294967295" rotation="0"/>
+    <instance objName="objThief1" x="96" y="32" name="inst_9A8C8AE2" locked="0" code="" scaleX="1.83333337306976" scaleY="1.83333337306976" colour="4294967295" rotation="0"/>
     <instance objName="objGuard1" x="544" y="256" name="inst_73EA4D4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCover" x="167" y="151" name="inst_DBB96739" locked="0" code="" scaleX="5.30000019073486" scaleY="5.30000019073486" colour="4294967295" rotation="0"/>
     <instance objName="objMove" x="416" y="256" name="inst_0D4BAE31" locked="0" code="" scaleX="3.45000004768372" scaleY="1.57894742488861" colour="4294967295" rotation="0"/>
