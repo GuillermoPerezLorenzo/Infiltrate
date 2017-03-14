@@ -33,6 +33,7 @@ primerpunto=false
 covered = false
 
 firstCollision = false
+global.key1 = false
 
 image_speed = 0.1
 //global.path1 = path_add();
